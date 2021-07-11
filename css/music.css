@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../image/mig.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  margin-top: 10%;
+}
+img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+.music_div {
+  width: 20%;
+  height: 20em;
+  border: 2px solid red;
+  margin-left: 61%;
+  margin-top: -30px;
+  border-radius: 50%;
+}
+.span {
+  display: inline-block;
+  background-color: rgb(151, 155, 155);
+  width: 90%;
+  font-size: 17px;
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 60px;
+  height: 40px;
+  text-indent: 5px;
+  border-radius: 10px;
+  color: rgb(12, 12, 12);
+  text-transform: capitalize;
+}
+.arrow {
+  position: absolute;
+
+  top: 9.6em;
+  /* padding-top: 30px; */
+}
+
+#navbar {
+  background-color: black;
+  position: fixed;
+  top: 0em;
+  width: 100%;
+}
+
+#ul-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+}
+
+.nav {
+  font-family: sans-serif;
+  color: white;
+  padding: 1.1em;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.nav:hover {
+  border-radius: 3em;
+  background-color: rgb(233, 103, 103);
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(196, 191, 191);
+}
+a:hover {
+  color: black;
+}
+.show_design_music {
+  width: 70%;
+  /* height: 25em; */
+  height: 40vh;
+  margin-top: -50px;
+  margin: auto;
+  background-color: rgb(253, 255, 255);
+  border-radius: 20px;
+}
+p {
+  text-align: end;
+  padding: 10px 20px;
+}
+.music {
+  text-align: center;
+  color: rgb(42, 44, 168);
+}
+.music_controls {
+  text-align: center;
+  margin: 30px;
+}
+audio {
+  width: 60%;
+}
+.fa-step-backward {
+  position: relative;
+  top: -1.2em;
+}
+.fa-step-forward {
+  position: relative;
+  top: -1.2em;
+}
+.list_badge {
+  display: flex;
+  justify-content: center;
+  /* margin-top:20px; */
+}
+.downlaod_show {
+  height: 3em;
+  /* background-color: rgb(5, 5, 5); */
+  /* border:1px solid rgb(12,322,122) */
+}
+.like_dislike {
+  height: 3em;
+  /* background-color: black; */
+  /* border:1px solid rgb(12,322,122) */
+}
+.same_for_badge {
+  margin: 20px;
+}
+.badge_items {
+  color: rgb(116, 112, 112);
+  font-size: 23px;
+  margin-top: -2em;
+  margin-left: 50px;
+}
+span:hover {
+  color: rgb(219, 48, 48);
+}
+.add_music {
+  opacity: 1;
+}
+.toggleClass {
+  opacity: 0;
+}

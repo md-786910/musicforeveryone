@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="./image/ison.png" type="image/x-icon">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/music.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music|Songs</title>
+    </head>
+    <body>
+        <div id="navbar">
+            <ul id="ul-list">
+                <li class="nav"><a href="index.html">Home</a></li>
+                <li class="nav"><a href="about.html">About</a></li>
+                <li class="nav"><a href="list.html">List</a></li>
+                <li class="nav" id="mig"><a href="music.html">Music</a></li>
+                <img src="./image/mig.jpg" alt="">
+            </ul>
+        </div>
+        <div class="container">
+            <div class="title">
+                <div class="music_div">
+                    <script>
+                        document.querySelector(".music_div").addEventListener("click",() =>{
+                                document.querySelector(".add_music").classList.toggle("toggleClass")    
+                        })
+                    </script>
+                    <span class="span">
+                        click here for <i class="fa fa-arrow-down arrow"></i>
+                        listening music
+
+                        <i class="fa fa-times" onclick="deleted()"></i>
+                        <script>
+                                  function deleted() {
+                                         document.querySelector(".span").style.display="none"
+                                      } 
+
+                                      let music_div=document.querySelector(".music_div");
+                                      music_div.addEventListener("click",()=>{
+                                         
+                                      })
+                        </script>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="add_music">
+            <div class="show_design_music">
+                <p class="hideMusicDesign">
+                    <i class="fa fa-times"></i>
+                </p>
+
+                <script>
+let hideMusicDesign=document.querySelector(".hideMusicDesign")
+hideMusicDesign.addEventListener("click",()=>{
+    document.querySelector(".add_music").style.display="none"
+})
+                </script>
+                <div class="music">
+                    <i class="fa fa-2x fa-music"></i>
+                </div>
+                <div class="music_controls">
+                    <i class="fa fa-step-backward"></i>
+                    <audio class="audioTag"
+                        controls autoplay loop></audio>
+                    <i class="fa fa-step-forward"></i>
+
+                </div>
+
+                <!-- download btn and show all music here down and like and dislike  -->
+                <div class="list_badge">
+                    <div class="downlaod_show same_for_badge">
+                        <span class="badge_items">
+                            <a download class="download"><i class="fa
+                                    fa-download"></i></a>
+                        </span>
+                        <span class="badge_items">
+                            <a href="list.html"><i class="fa fa-box"></i></a>
+                        </span>
+                    </div>
+                    <div class="like_dislike same_for_badge">
+
+                        <span class="badge_items">
+                            <i class="fa fa-thumbs-up"></i>
+                        </span>
+                        <span class="badge_items">
+                            <i class="fa fa-thumbs-down"></i>
+                        </span>
+                        <span class="badge_items">
+                            <i class="fa fa-trash"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js"
+        integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ=="crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="./js/fetchMusic.js"></script>
+</html>
